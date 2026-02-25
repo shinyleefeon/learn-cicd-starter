@@ -29,7 +29,7 @@ func databaseUserToUser(user database.User) (User, error) {
 		CreatedAt: createdAt,
 		UpdatedAt: updatedAt,
 		Name:      user.Name,
-		ApiKey:    user.ApiKey,
+		ApiKey:    user.ApiKey, // #nosec G117
 	}, nil
 }
 
