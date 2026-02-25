@@ -18,4 +18,4 @@ jobs:
           go-version: "1.25.1"
 
       - name: Run formatting check
-        run: test -z $(gofmt ./...)
+        run: test -z $(go fmt ./...)
